@@ -1,7 +1,7 @@
 /*
  * File: errors.c
- * Auth: Alex Yu
- *       Brennan D Baraban
+ * Auth: Joseph Mahiuha
+ *       Lewis Mwaura
  */
 
 #include "shell.h"
@@ -40,7 +40,7 @@ int num_len(int num)
 }
 
 /**
- * _itoa - Converts an integer to a string.
+ * _itoa - Converts an integer to a string to enable manipulation.
  * @num: The integer.
  *
  * Return: The converted string.
@@ -79,8 +79,8 @@ char *_itoa(int num)
 
 
 /**
- * create_error - Writes a custom error message to stderr.
- * @args: An array of arguments.
+ * create_error - Writes a custom error message to stderr that conforms to shell standards.
+ * @args: An array of arguments passed to the function.
  * @err: The error value.
  *
  * Return: The error value.
