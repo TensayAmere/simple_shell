@@ -1,7 +1,7 @@
 /*
  * File: str_funcs1.c
- * Auth: Alex Yu
- *       Brennan D Baraban
+ * Auth: Joseph Mahiuha
+ *       Lewis Mwaura
  */
 
 #include "shell.h"
@@ -13,7 +13,7 @@ char *_strncat(char *dest, const char *src, size_t n);
 
 /**
  * _strlen - Returns the length of a string.
- * @s: A pointer to the characters string.
+ * @s: A pointer to the characters string that are passed as arguments.
  *
  * Return: The length of the character string.
  */
