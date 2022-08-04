@@ -1,7 +1,7 @@
 /*
  * File: builtin.c
- * Auth: Alex Yu
- *       Brennan D Baraban
+ * Auth: Joseph Mahiuha
+ *       Lewis Mwaura
  */
 
 #include "shell.h"
@@ -196,4 +196,3 @@ int shellby_help(char **args, char __attribute__((__unused__)) **front)
 
 	return (0);
 }
-Footer
