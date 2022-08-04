@@ -1,7 +1,7 @@
 /*
  * File: input_helpers.c
- * Auth: Alex Yu
- *       Brennan D Baraban
+ * Auth: Joseph Mahiuha
+ *       Lewis Mwaura
  */
 
 #include "shell.h"
@@ -14,7 +14,7 @@ int check_args(char **args);
 
 /**
  * get_args - Gets a command from standard input.
- * @line: A buffer to store the command.
+ * @line: A buffer to store the command to improve perfomance.
  * @exe_ret: The return value of the last executed command.
  *
  * Return: If an error occurs - NULL.
@@ -111,7 +111,7 @@ int call_args(char **args, char **front, int *exe_ret)
  * @front: A double pointer to the beginning of args.
  * @exe_ret: The return value of the parent process' last executed command.
  *
- * Return: The return value of the last executed command.
+ * Return: The return value of the last executed command on the shell history.
  */
 int run_args(char **args, char **front, int *exe_ret)
 {
@@ -191,8 +191,8 @@ int handle_args(int *exe_ret)
  * check_args - Checks if there are any leading ';', ';;', '&&', or '||'.
  * @args: 2D pointer to tokenized commands and arguments.
  *
- * Return: If a ';', '&&', or '||' is placed at an invalid position - 2.
- *	   Otherwise - 0.
+ * Return: If a ';', '&&', or '||' is placed at an invalid position - 2 as error status.
+ *	   Otherwise - 0 as error status.
  */
 int check_args(char **args)
 {
